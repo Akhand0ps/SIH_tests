@@ -21,7 +21,7 @@ A comprehensive backend system for mental health assessments with multilingual s
 - **Anonymous User Tracking**: Secure anonymous IDs for session management
 - **Data Protection**: IP and device hashing, no PII storage
 - **CORS Configuration**: Secure frontend communication
-- **Data Retention**: Automatic cleanup of old data (2 years)
+- **Data Retention**: Automatic cleanup of old data (1 years)
 
 ## 📊 Supported Assessment Tools
 
@@ -106,7 +106,7 @@ RATE_LIMIT_REQUESTS=100
 RATE_LIMIT_WINDOW=15
 
 # Data Retention (days)
-DATA_RETENTION_DAYS=730
+DATA_RETENTION_DAYS=365
 ```
 
 ## 📡 API Endpoints
@@ -257,7 +257,7 @@ const anonymousId = generateAnonymousId();
 - CORS protection for API access
 
 ### Data Retention
-- User results: 2 years maximum
+- User results: 1 years maximum
 - Recommendations: Until expiry date
 - Analytics: Aggregated data only
 - Automatic cleanup processes

@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import rateLimit from "express-rate-limit";
 import { connectDB, checkDBHealth, seedDatabase, cleanupOldData } from "./config/database.js";
 
 
@@ -70,8 +71,26 @@ app.use((req, res, next) => {
     next();
 });
 
-// Rate limiting would go here in production
-// app.use(rateLimit({ ... }));
+
+const limiter = rateLimit({
+    windowMs: (process.env.RATE_LIMIT_WINDOW || 15) * 60 * 1000,
+    max: parseInt(process.env.RATE_LIMIT_REQUESTS) || 100,
+    message: {
+        success: false,
+        error: 'Too many requests',
+        message: 'Rate limit exceeded. Please try again later.',
+        retryAfter: Math.ceil(((process.env.RATE_LIMIT_WINDOW || 15) * 60 * 1000) / 1000)
+    },
+    standardHeaders: true,
+    legacyHeaders: false,
+    // Skip rate kimit for helath check
+    skip: (req) => req.path === '/api/health',
+});
+
+// Apply rate limiting to all reqs
+if (process.env.NODE_ENV === 'production') {
+    app.use(limiter);
+}
 
 // API routes
 app.use("/api/v1/questions", questionsRoutes);

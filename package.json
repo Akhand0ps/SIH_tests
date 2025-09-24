@@ -5,7 +5,7 @@
   "license": "ISC",
   "author": "AKhand Pratap Singh",
   "type": "module",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",

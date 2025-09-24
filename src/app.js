@@ -24,14 +24,14 @@ connectDB()
 
 const corsOptions = {
     origin: function (origin, callback) {
-       
+        // Allow requests with no origin (like mobile apps or curl requests)
+        if (!origin) return callback(null, true);
         
         const allowedOrigins = [
-            'http://localhost:3001',
-            // frlga
+            'http://localhost:5173',
         ];
         
-        if (allowedOrigins.includes(origin)) {
+        if (allowedOrigins.includes(origin) || process.env.NODE_ENV === 'production') {
             callback(null, true);
         } else {
             callback(new Error('Not allowed by CORS'));
@@ -52,7 +52,7 @@ const corsOptions = {
     maxAge: 86400 
 };
 
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));

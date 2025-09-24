@@ -1,0 +1,39 @@
+{
+  "testType": "K10",
+  "title": {
+    "en": "Kessler Psychological Distress Scale (K10)",
+    "ks": "کیسلر نفسیاتی دباؤ سکیل (K10)"
+  },
+  "instructions": {
+    "en": "Please indicate how often you felt the following in the last 30 days.",
+    "ks": "براہ کرم درج کریں کہ تُہند گذشتہ 30 دن منٛز درج ذیل کتھ حد تک محسوس ہوٗئن۔"
+  },
+  "options": [
+    { "value": 1, "label": { "en": "None of the time", "ks": "بالکل نہ" } },
+    { "value": 2, "label": { "en": "A little of the time", "ks": "کچھ حد تک" } },
+    { "value": 3, "label": { "en": "Some of the time", "ks": "کبھی کبھار" } },
+    { "value": 4, "label": { "en": "Most of the time", "ks": "اکثر وقت" } },
+    { "value": 5, "label": { "en": "All of the time", "ks": "ہر وقت" } }
+  ],
+  "questions": [
+    { "id": 1, "text": { "en": "During the last 30 days, about how often did you feel tired out for no good reason?", "ks": "گذشتہ 30 دن منٛز تُہہ بغیر وجہ کے تھکا ہوا کتھ وارے محسوس کیۄ؟" } },
+    { "id": 2, "text": { "en": "During the last 30 days, about how often did you feel nervous?", "ks": "گذشتہ 30 دن منٛز تُہہ کتھ وارے پریشان محسوس کیۄ؟" } },
+    { "id": 3, "text": { "en": "During the last 30 days, about how often did you feel so nervous that nothing could calm you down?", "ks": "گذشتہ 30 دن منٛز تُہہ کتھ وارے ایسا پریشان محسوس کیۄ کہ کچھ بھی تُہند سکون نہ دےٗسکَن؟" } },
+    { "id": 4, "text": { "en": "During the last 30 days, about how often did you feel hopeless?", "ks": "گذشتہ 30 دن منٛز تُہہ کتھ وارے مایوس محسوس کیۄ؟" } },
+    { "id": 5, "text": { "en": "During the last 30 days, about how often did you feel restless or fidgety?", "ks": "گذشتہ 30 دن منٛز تُہہ کتھ وارے بے چین یا بگڑا ہوا محسوس کیۄ؟" } },
+    { "id": 6, "text": { "en": "During the last 30 days, about how often did you feel so restless you could not sit still?", "ks": "گذشتہ 30 دن منٛز تُہہ کتھ وارے اتنا بے چین محسوس کیۄ کہ بیٹھ نہ ساکٲسکَن؟" } },
+    { "id": 7, "text": { "en": "During the last 30 days, about how often did you feel depressed?", "ks": "گذشتہ 30 دن منٛز تُہہ کتھ وارے افسردہ محسوس کیۄ؟" } },
+    { "id": 8, "text": { "en": "During the last 30 days, about how often did you feel that everything was an effort?", "ks": "گذشتہ 30 دن منٛز تُہہ کتھ وارے محسوس کیۄ کہ ہر چیز ایک محنت چھُ؟" } },
+    { "id": 9, "text": { "en": "During the last 30 days, about how often did you feel worthless?", "ks": "گذشتہ 30 دن منٛز تُہہ کتھ وارے بے قیمت محسوس کیۄ؟" } },
+    { "id": 10, "text": { "en": "During the last 30 days, about how often did you feel hopeless about the future?", "ks": "گذشتہ 30 دن منٛز تُہہ کتھ وارے مستقبل بابت مایوس محسوس کیۄ؟" } }
+  ],
+  "scoring": {
+    "range": "10-50",
+    "interpretation": [
+      { "min": 10, "max": 19, "severity": { "en": "Low distress", "ks": "کَم دباؤ" } },
+      { "min": 20, "max": 24, "severity": { "en": "Mild distress", "ks": "ہلکا دباؤ" } },
+      { "min": 25, "max": 29, "severity": { "en": "Moderate distress", "ks": "درمیانہ دباؤ" } },
+      { "min": 30, "max": 50, "severity": { "en": "Severe distress", "ks": "شدید دباؤ" } }
+    ]
+  }
+}

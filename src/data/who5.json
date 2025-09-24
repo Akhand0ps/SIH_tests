@@ -1,0 +1,34 @@
+{
+  "testType": "WHO-5",
+  "title": {
+    "en": "WHO-5 Well-Being Index",
+    "ks": "WHO-5 خیریت انڈیکس"
+  },
+  "instructions": {
+    "en": "Please indicate how often you experienced the following in the last 2 weeks.",
+    "ks": "براہ کرم درج کریں کہ گذشتہ 2 ہفتے منٛز تُہند درج ذیل کتھ وارے محسوس ہوٗئن۔"
+  },
+  "options": [
+    { "value": 0, "label": { "en": "At no time", "ks": "کسی بھی وقت نہ" } },
+    { "value": 1, "label": { "en": "Some of the time", "ks": "کبھی کبھار" } },
+    { "value": 2, "label": { "en": "Less than half of the time", "ks": "آدھی وقت سے کم" } },
+    { "value": 3, "label": { "en": "More than half of the time", "ks": "آدھی وقت سے زیادہ" } },
+    { "value": 4, "label": { "en": "Most of the time", "ks": "اکثر وقت" } },
+    { "value": 5, "label": { "en": "All of the time", "ks": "ہر وقت" } }
+  ],
+  "questions": [
+    { "id": 1, "text": { "en": "I have felt cheerful and in good spirits.", "ks": "میں خوش مزاج اور خوشی محسوس کرنٛہ" } },
+    { "id": 2, "text": { "en": "I have felt calm and relaxed.", "ks": "میں پر سکون اور آرام دہ محسوس کرنٛہ" } },
+    { "id": 3, "text": { "en": "I have felt active and vigorous.", "ks": "میں متحرک اور پرجوش محسوس کرنٛہ" } },
+    { "id": 4, "text": { "en": "I woke up feeling fresh and rested.", "ks": "میں تازہ دم اور آرام دہ محسوس کرنٛہ اٹھا" } },
+    { "id": 5, "text": { "en": "My daily life has been filled with things that interest me.", "ks": "میری روزمرہ زندگی دلچسپی کی چیزوں سے بھری ہوئی رہی" } }
+  ],
+  "scoring": {
+    "range": "0-25",
+    "interpretation": [
+      { "min": 0, "max": 12, "severity": { "en": "Poor well-being", "ks": "کم خیریت" } },
+      { "min": 13, "max": 19, "severity": { "en": "Moderate well-being", "ks": "درمیانہ خیریت" } },
+      { "min": 20, "max": 25, "severity": { "en": "Good well-being", "ks": "اچھی خیریت" } }
+    ]
+  }
+}

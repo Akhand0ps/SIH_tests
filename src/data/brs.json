@@ -1,0 +1,35 @@
+{
+  "testType": "BRS",
+  "title": {
+    "en": "Brief Resilience Scale",
+    "ks": "مختصر لچک سکیل"
+  },
+  "instructions": {
+    "en": "Please indicate your agreement with the following statements.",
+    "ks": "براہ کرم درج کریں کہ تُہند درج ذیل بیان سان کتھ حد تک متفق آسن۔"
+  },
+  "options": [
+    { "value": 1, "label": { "en": "Strongly disagree", "ks": "سخت ناپسند" } },
+    { "value": 2, "label": { "en": "Disagree", "ks": "ناپسند" } },
+    { "value": 3, "label": { "en": "Neutral", "ks": "غیر جانبدار" } },
+    { "value": 4, "label": { "en": "Agree", "ks": "متفق" } },
+    { "value": 5, "label": { "en": "Strongly agree", "ks": "سخت متفق" } }
+  ],
+  "questions": [
+    { "id": 1, "text": { "en": "I tend to bounce back quickly after hard times.", "ks": "میں مشکل وقت کے بعد جلد ہی واپس آنا پسند کرتا ہوں۔" } },
+    { "id": 2, "text": { "en": "I have a hard time making it through stressful events.", "ks": "مجھ کو دباؤ والے حالات سے گزرنا مشکل لگتا ہے۔" } },
+    { "id": 3, "text": { "en": "It does not take me long to recover from a stressful event.", "ks": "دباؤ والے واقعے سے صحتیابی کرنے میں زیادہ وقت نہیں لگتا۔" } },
+    { "id": 4, "text": { "en": "It is hard for me to snap back when something bad happens.", "ks": "جب کچھ برا ہوتا ہے تو واپس آنا میرے لیے مشکل ہے۔" } },
+    { "id": 5, "text": { "en": "I usually come through difficult times with little trouble.", "ks": "میں عام طور پر مشکل وقت آسانی سے گزار لیتا ہوں۔" } },
+    { "id": 6, "text": { "en": "I tend to take a long time to get over setbacks in my life.", "ks": "میں زندگی میں ناکامیوں سے نمٹنے میں زیادہ وقت لیتا ہوں۔" } }
+  ],
+  "scoring": {
+    "reverseScoredQuestions": [2, 4, 6],  
+    "range": "6-30",
+    "interpretation": [
+      { "min": 6, "max": 17, "severity": { "en": "Low resilience", "ks": "کم لچک" } },
+      { "min": 18, "max": 23, "severity": { "en": "Normal resilience", "ks": "معمولی لچک" } },
+      { "min": 24, "max": 30, "severity": { "en": "High resilience", "ks": "زیادہ لچک" } }
+    ]
+  }
+}

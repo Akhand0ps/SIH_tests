@@ -1,0 +1,39 @@
+{
+  "testType": "UCLA Loneliness Scale",
+  "title": {
+    "en": "UCLA Loneliness Scale (Short Version)",
+    "ks": "UCLA تنہائی سکیل (مختصر ورژن)"
+  },
+  "instructions": {
+    "en": "Please indicate how often you feel the following statements are true for you.",
+    "ks": "براہ کرم درج کریں کہ تُہند کتھ وارے درج ذیل بیان سچ محسوس ہونٛہ آسن۔"
+  },
+  "options": [
+    { "value": 1, "label": { "en": "Never", "ks": "کدی نہ" } },
+    { "value": 2, "label": { "en": "Rarely", "ks": "شاذ و نادر" } },
+    { "value": 3, "label": { "en": "Sometimes", "ks": "کبھی کبھی" } },
+    { "value": 4, "label": { "en": "Often", "ks": "اکثر" } }
+  ],
+  "questions": [
+    { "id": 1, "text": { "en": "I feel in tune with the people around me.", "ks": "میں اپنے ارد گرد لوگن سٲتھ ہم آہنگ محسوس کرنٛہ" } },
+    { "id": 2, "text": { "en": "I lack companionship.", "ks": "مجھے صحبت کی کمی محسوس ہونٛہ" } },
+    { "id": 3, "text": { "en": "There is no one I can turn to.", "ks": "کوئی نہ چھُ جٲے میں رجوع کرنٛہ" } },
+    { "id": 4, "text": { "en": "I do not feel alone.", "ks": "میں اکیلا محسوس نہ کرنٛہ" } },
+    { "id": 5, "text": { "en": "I feel part of a group of friends.", "ks": "میں دوستوں کے گروپ کا حصہ محسوس کرنٛہ" } },
+    { "id": 6, "text": { "en": "I feel isolated from others.", "ks": "میں دوسروں سٲتھ الگ تھلگ محسوس کرنٛہ" } },
+    { "id": 7, "text": { "en": "I can find companionship when I want it.", "ks": "جب میں چاہوں، صحبت حاصل کرنٛہ ممکن آسن" } },
+    { "id": 8, "text": { "en": "I feel left out.", "ks": "میں الگ تھلگ محسوس کرنٛہ" } }
+  ],
+  "scoring": {
+    "reverseScoredQuestions": [1, 4, 5, 7],
+    "range": "8-32",
+    "interpretation": [
+      { "min": 8, "max": 16, "severity": { "en": "Low loneliness", "ks": "کَم تنہائی" } },
+      { "min": 17, "max": 24, "severity": { "en": "Moderate loneliness", "ks": "درمیانہ تنہائی" } },
+      { "min": 25, "max": 32, "severity": { "en": "High loneliness", "ks": "زیادہ تنہائی" } }
+    ]
+  }
+}
+
+
+

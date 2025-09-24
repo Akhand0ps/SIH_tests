@@ -1,0 +1,36 @@
+{
+  "testType": "ISI",
+  "title": {
+    "en": "Insomnia Severity Index (ISI)",
+    "ks": "بے خوابی شدت اشاریہ (ISI)"
+  },
+  "instructions": {
+    "en": "Please rate the following statements based on the last 2 weeks.",
+    "ks": "براۄے مہربانی تٲیژ بیان ونان وچھان پٲٹھ واریاہ ہفتا کٲندر."
+  },
+  "options": [
+    { "value": 0, "label": { "en": "None", "ks": "کینٛہ نہ" } },
+    { "value": 1, "label": { "en": "Mild", "ks": "ہلکہ" } },
+    { "value": 2, "label": { "en": "Moderate", "ks": "درٛمیاٖنی" } },
+    { "value": 3, "label": { "en": "Severe", "ks": "سخت" } },
+    { "value": 4, "label": { "en": "Very severe", "ks": "بہت سخت" } }
+  ],
+  "questions": [
+    { "id": 1, "text": { "en": "Difficulty falling asleep", "ks": "نیند آسن منز دِقّت" } },
+    { "id": 2, "text": { "en": "Difficulty staying asleep", "ks": "نیند جاری رۄکھنہٕ منز دِقّت" } },
+    { "id": 3, "text": { "en": "Problems waking up too early", "ks": "بہت سٲنٛژ جاگنہٕ ہٲنٛز مسئلہ" } },
+    { "id": 4, "text": { "en": "How satisfied/dissatisfied are you with your current sleep pattern?", "ks": "تُہند موجودہ نیند انداز سٲتھ کِہ زِ تُہہ کِتھ مطمئن/غیر مطمئن چھو؟" } },
+    { "id": 5, "text": { "en": "How noticeable to others do you think your sleep problems are in terms of impairing the quality of your life?", "ks": "تُہہ کِس قدر وٲنۍ چھے زِ تُہند نیند مسائل بوجھٲن چھِ باقیو کٲس روزانٕہ ژٲند سٲریو ہٲنٛز اثر پٲوند؟" } },
+    { "id": 6, "text": { "en": "How worried/distressed are you about your current sleep problem?", "ks": "تُہہ کِس قدر فِکر/پریشان چھو تُہند موجودہ نیند مسئلہ سٲتھ؟" } },
+    { "id": 7, "text": { "en": "To what extent do you consider your sleep problem to interfere with your daily functioning (e.g., daytime fatigue, mood, ability to function at work/daily chores, concentration, memory, mood, etc.)?", "ks": "تُہہ کِس حد سٲتھ وٲنۍ چھو زِ تُہند نیند مسئلہ تُہند روزانٕہ کٲر (مثال، روز کٲندر تھکاو، مزاج، کٲم کرن ہنٛز صلاحیت، دھیان، یاداشت، مزاج وغیرہ) منز مداخلت کران چھُ؟" } }
+  ],
+  "scoring": {
+    "range": "0-28",
+    "interpretation": [
+      { "min": 0, "max": 7, "severity": { "en": "No clinically significant insomnia", "ks": "کلینیکی طور کوئی اہم بے خوابی نہ" } },
+      { "min": 8, "max": 14, "severity": { "en": "Subthreshold insomnia", "ks": "سرحدی بے خوابی" } },
+      { "min": 15, "max": 21, "severity": { "en": "Moderate insomnia", "ks": "درٛمیاٖنی بے خوابی" } },
+      { "min": 22, "max": 28, "severity": { "en": "Severe insomnia", "ks": "سخت بے خوابی" } }
+    ]
+  }
+}

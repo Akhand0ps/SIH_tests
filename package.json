@@ -1,0 +1,38 @@
+{
+  "name": "p_tests",
+  "version": "1.0.0",
+  "description": "server for SIH mental health tests with scoring, recommendations, and insights",
+  "license": "ISC",
+  "author": "AKhand Pratap Singh",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node src/scripts/seedDatabase.js"
+  },
+  "keywords": [
+    "mental-health",
+    "psychological-tests",
+    "phq9",
+    "gad7",
+    "mbti",
+    "recommendations",
+    "api",
+    "kashmiri-language"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

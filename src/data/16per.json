@@ -1,0 +1,38 @@
+{
+  "testType": "MBTI",
+  "title": {
+    "en": "16 Personality MBTI",
+    "ks": "16 شخصیتی MBTI"
+  },
+  "instructions": {
+    "en": "Choose the option that best describes how you usually think, feel, and act.",
+    "ks": "وہ اختیار منتخب کریں جو سب سے زیادہ بیان کرتا ہے کہ تُہند عام طور پر کیسے سوچتا، محسوس کرتا، اور عمل کرتا ہے۔"
+  },
+  "options": [
+    { "value": 1, "label": { "en": "Strongly disagree", "ks": "سخت ناپسند" } },
+    { "value": 2, "label": { "en": "Disagree", "ks": "ناپسند" } },
+    { "value": 3, "label": { "en": "Neutral", "ks": "غیر جانبدار" } },
+    { "value": 4, "label": { "en": "Agree", "ks": "متفق" } },
+    { "value": 5, "label": { "en": "Strongly agree", "ks": "سخت متفق" } }
+  ],
+  "questions": [
+    { "id": 1, "trait": "I/E", "text": { "en": "I enjoy social gatherings and meeting new people.", "ks": "میں سماجی تقریبات اور نئے لوگوں سے ملنا پسند کرتا ہوں۔" } },
+    { "id": 2, "trait": "I/E", "text": { "en": "I prefer spending time alone or with a close friend rather than a large group.", "ks": "میں اکیلا یا کسی قریبی دوست کے ساتھ وقت گزارنا پسند کرتا ہوں بجائے بڑے گروپ کے۔" } },
+    { "id": 3, "trait": "S/N", "text": { "en": "I focus on facts and concrete details more than ideas or possibilities.", "ks": "میں خیالات یا امکانات کے بجائے حقائق اور ٹھوس تفصیلات پر زیادہ توجہ دیتا ہوں۔" } },
+    { "id": 4, "trait": "S/N", "text": { "en": "I enjoy thinking about abstract concepts and future possibilities.", "ks": "مجھے تجریدی تصورات اور مستقبل کے امکانات پر غور کرنا پسند ہے۔" } },
+    { "id": 5, "trait": "T/F", "text": { "en": "I make decisions based on logic and objective analysis.", "ks": "میں فیصلے منطق اور معروضی تجزیہ کی بنیاد پر کرتا ہوں۔" } },
+    { "id": 6, "trait": "T/F", "text": { "en": "I consider people's feelings and emotions when making decisions.", "ks": "میں فیصلے کرتے وقت لوگوں کے جذبات اور احساسات کو مدنظر رکھتا ہوں۔" } },
+    { "id": 7, "trait": "J/P", "text": { "en": "I like to plan ahead and follow a structured routine.", "ks": "مجھے پیشگی منصوبہ بندی کرنا اور ایک منظم روٹین پر عمل کرنا پسند ہے۔" } },
+    { "id": 8, "trait": "J/P", "text": { "en": "I prefer to be spontaneous and flexible rather than stick to a strict plan.", "ks": "میں سخت منصوبے کی بجائے لچکدار اور خود بخود رہنا پسند کرتا ہوں۔" } }
+  ],
+  "scoring": {
+    "traits": ["I/E", "S/N", "T/F", "J/P"],
+    "rangePerTrait": "variable",
+    "interpretation": {
+      "I/E": { "min": 0, "max": 10, "labels": { "I": "Introversion", "E": "Extraversion" } },
+      "S/N": { "min": 0, "max": 10, "labels": { "S": "Sensing", "N": "Intuition" } },
+      "T/F": { "min": 0, "max": 10, "labels": { "T": "Thinking", "F": "Feeling" } },
+      "J/P": { "min": 0, "max": 10, "labels": { "J": "Judging", "P": "Perceiving" } }
+    }
+  }
+}

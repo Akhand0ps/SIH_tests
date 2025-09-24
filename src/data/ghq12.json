@@ -1,0 +1,31 @@
+{
+  "testType": "GHQ-12",
+  "title": {
+    "en": "General Health Questionnaire (GHQ-12)",
+    "ks": "جنرل ہیلتھ کویسچنیر (GHQ-12)"
+  },
+  "instructions": {
+    "en": "Please indicate how much you have experienced the following symptoms recently.",
+    "ks": "براہ کرم درج کریں کہ تُہند حال ہی منز درج ذیل علامات کتھ حد تک محسوس ہوٗئن۔"
+  },
+  "options": [
+    { "value": 0, "label": { "en": "Not at all", "ks": "بلکل نہ" } },
+    { "value": 1, "label": { "en": "No more than usual", "ks": "معمول کے مطابق" } },
+    { "value": 2, "label": { "en": "Rather more than usual", "ks": "معمول سے زیادہ" } },
+    { "value": 3, "label": { "en": "Much more than usual", "ks": "بہت زیادہ" } }
+  ],
+  "questions": [
+    { "id": 1, "text": { "en": "Have you been able to concentrate on what you’re doing?", "ks": "تُہہ کیہ کرن ہنٛز کِم پر دھیان مرکوز کرن ساکِن ہٲو؟" } },
+    { "id": 2, "text": { "en": "Have you lost much sleep over worry?", "ks": "فکر کی وجہ سٲتھ تُہہ زیادہ نیند کھوٗن چھُ؟" } },
+    { "id": 3, "text": { "en": "Have you felt that you are playing a useful part in things?", "ks": "تُہہ محسوس کیۄ چھُ زِ تُہہ کسی چیز منز مفید کردار ادا کرن چھُ؟" } },
+    { "id": 4, "text": { "en": "Have you felt capable of making decisions about things?", "ks": "تُہہ محسوس کیۄ چھُ زِ تُہہ فیصلے کرن ہنٛز اہل آسن؟" } },
+    { "id": 5, "text": { "en": "Have you felt constantly under strain?", "ks": "تُہہ مستقل دباؤ منز محسوس کیۄ چھُ؟" } },
+    { "id": 6, "text": { "en": "Have you felt you could not overcome your difficulties?", "ks": "تُہہ محسوس کیۄ چھُ زِ تُہہ اپنی مشکلات پر قابو نہ پا سکِن ہٲو؟" } },
+    { "id": 7, "text": { "en": "Have you been able to enjoy your normal day-to-day activities?", "ks": "تُہہ معمول کے روزانہ کاموں کا لطف اُٹھا ساکِن ہٲو؟" } },
+    { "id": 8, "text": { "en": "Have you been able to face up to your problems?", "ks": "تُہہ اپنی مشکلات کا سامنا کرن ساکِن ہٲو؟" } },
+    { "id": 9, "text": { "en": "Have you been feeling unhappy or depressed?", "ks": "تُہہ ناخوش یا افسردہ محسوس کرنٛہ؟" } },
+    { "id": 10, "text": { "en": "Have you been losing confidence in yourself?", "ks": "تُہہ اپنے آپ پر اعتماد کھوٗن چھُ؟" } },
+    { "id": 11, "text": { "en": "Have you been thinking of yourself as a worthless person?", "ks": "تُہہ اپنے آپ کو بے قیمت شخص سمجھنٛہ؟" } },
+    { "id": 12, "text": { "en": "Have you been feeling reasonably happy, all things considered?", "ks": "سب باتوں کو مدنظر رکھ کر تُہہ معقول حد تک خوش محسوس کرنٛہ؟" } }
+  ]
+}

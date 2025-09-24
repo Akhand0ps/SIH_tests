@@ -1,0 +1,61 @@
+{
+  "testType": "MBI-SS",
+  "title": {
+    "en": "Maslach Burnout Inventory – Student Survey (MBI-SS)",
+    "ks": "ماسلاچ برن آوٹ انوینٹری – طلبہ سروے (MBI-SS)"
+  },
+  "instructions": {
+    "en": "Please indicate how often you experience the following feelings related to your studies.",
+    "ks": "براہ کرم درج کریں کہ تُہند مطالعہ ہِنٛز متعلقہ احساس کتھ وارے محسوس ہونٛہ آسن۔"
+  },
+  "options": [
+    { "value": 0, "label": { "en": "Never", "ks": "کدی نہ" } },
+    { "value": 1, "label": { "en": "A few times a year or less", "ks": "سال منٛز کچھ وارے یا کم" } },
+    { "value": 2, "label": { "en": "Once a month or less", "ks": "مہینے منٛز ایک وار یا کم" } },
+    { "value": 3, "label": { "en": "A few times a month", "ks": "مہینے منٛز کچھ وارے" } },
+    { "value": 4, "label": { "en": "Once a week", "ks": "ہفتے منٛز ایک وار" } },
+    { "value": 5, "label": { "en": "A few times a week", "ks": "ہفتے منٛز کچھ وارے" } },
+    { "value": 6, "label": { "en": "Every day", "ks": "ہر دن" } }
+  ],
+  "questions": [
+    { "id": 1, "text": { "en": "I feel emotionally drained by my studies.", "ks": "میرا مطالعہ ہِنٛز باعث میں جذباتی طور پر تھکا ہوا محسوس کرنٛہ" } },
+    { "id": 2, "text": { "en": "I feel used up at the end of a day at school/university.", "ks": "میں اسکول/یونیورسٹی دن کٲندر آخر منز تھکا ہوا محسوس کرنٛہ" } },
+    { "id": 3, "text": { "en": "I feel fatigued when I get up in the morning and have to face another day at school/university.", "ks": "صبح اٹھنٛہ منز میں تھکا ہوا محسوس کرنٛہ جٲے دوبارہ اسکول/یونیورسٹی دن کا سامنا کرنٛہ" } },
+    { "id": 4, "text": { "en": "I have become more cynical about the value of my studies.", "ks": "میں اپنے مطالعہ ہِنٛز قدر بابت زیادہ بدبین ہو گیا ہوں" } },
+    { "id": 5, "text": { "en": "I doubt the significance of my studies.", "ks": "میں اپنے مطالعہ ہِنٛز اہمیت پٲٹھ شک کرنٛہ" } },
+    { "id": 6, "text": { "en": "I have accomplished many worthwhile things in my studies.", "ks": "میں اپنے مطالعہ ہِنٛز کئی قابل قدر کام مکمل کیۄں" } },
+    { "id": 7, "text": { "en": "In my opinion, I am a good student.", "ks": "میری رائے منٛز، میں ایک اچھا طالب علم ہوں" } }
+  ],
+  "dimensions": {
+    "emotionalExhaustion": [1, 2, 3],
+    "cynicism": [4, 5],
+    "academicEfficacy": [6, 7]
+  },
+  
+  "scoring": {
+    "emotionalExhaustion": {
+      "range": "0-18",
+      "interpretation": [
+        { "min": 0, "max": 9, "severity": { "en": "Low", "ks": "کَم" } },
+        { "min": 10, "max": 14, "severity": { "en": "Moderate", "ks": "درمیانہ" } },
+        { "min": 15, "max": 18, "severity": { "en": "High", "ks": "زیادہ" } }
+      ]
+    },
+    "cynicism": {
+      "range": "0-12",
+      "interpretation": [
+        { "min": 0, "max": 4, "severity": { "en": "Low", "ks": "کَم" } },
+        { "min": 5, "max": 8, "severity": { "en": "Moderate", "ks": "درمیانہ" } },
+        { "min": 9, "max": 12, "severity": { "en": "High", "ks": "زیادہ" } }
+      ]
+    },
+    "academicEfficacy": {
+      "range": "0-12",
+      "interpretation": [
+        { "min": 0, "max": 4, "severity": { "en": "Low", "ks": "کَم" } },
+        { "min": 5, "max": 8, "severity": { "en": "Moderate", "ks": "درمیانہ" } },
+        { "min": 9, "max": 12, "severity": { "en": "High", "ks": "زیادہ" } }
+      ]
+    }
+  }
+}

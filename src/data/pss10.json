@@ -1,0 +1,99 @@
+{
+  "testType": "PSS-10",
+  "title": {
+    "en": "Perceived Stress Scale (PSS-10)",
+    "ks": "محسوس تھوان وَنٛگُن سکیل (PSS-10)"
+  },
+  "instructions": {
+    "en": "Please indicate how often you felt or thought a certain way during the last month.",
+    "ks": "براہ کرم پچھلے مہینے تُہند کتھ وارے ایٚک مخصوص طریقے سُند محسوس کرنہ یا سوچنہ درج کرٲو۔"
+  },
+  "options": [
+    { "value": 0, "label": { "en": "Never", "ks": "کدی نہ" } },
+    { "value": 1, "label": { "en": "Almost never", "ks": "تقریباً کدی نہ" } },
+    { "value": 2, "label": { "en": "Sometimes", "ks": "کبھی کبھی" } },
+    { "value": 3, "label": { "en": "Fairly often", "ks": "اکثر" } },
+    { "value": 4, "label": { "en": "Very often", "ks": "بہت اکثر" } }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "text": {
+        "en": "In the last month, how often have you been upset because of something that happened unexpectedly?",
+        "ks": "پچھلے مہینے منٛز تُہند کتھ وارے پریشان آسن کٲہ غیر متوقع چیزہ کی وجہ سٕے؟"
+      }
+    },
+    {
+      "id": 2,
+      "text": {
+        "en": "In the last month, how often have you felt that you were unable to control the important things in your life?",
+        "ks": "پچھلے مہینے تُہند کتھ وارے محسوس کرنہ کہ تُہند اہم چیزن پٲٹھ قابو نہ آسن؟"
+      }
+    },
+    {
+      "id": 3,
+      "text": {
+        "en": "In the last month, how often have you felt nervous and stressed?",
+        "ks": "پچھلے مہینے تُہند کتھ وارے گھبراہٹ اور دباؤ محسوس کرنہ؟"
+      }
+    },
+    {
+      "id": 4,
+      "text": {
+        "en": "In the last month, how often have you felt confident about your ability to handle your personal problems?",
+        "ks": "پچھلے مہینے تُہند کتھ وارے پکا یقین محسوس کرنہ کہ تُہند ذاتی مشکلات سنبھالنہ آسن؟"
+      }
+    },
+    {
+      "id": 5,
+      "text": {
+        "en": "In the last month, how often have you felt that things were going your way?",
+        "ks": "پچھلے مہینے تُہند کتھ وارے محسوس کرنہ کہ سب چیز تُہند مطابق چلنہ آسن؟"
+      }
+    },
+    {
+      "id": 6,
+      "text": {
+        "en": "In the last month, how often have you found that you could not cope with all the things that you had to do?",
+        "ks": "پچھلے مہینے تُہند کتھ وارے لگنہ کہ تُہند سب چیزہ پٲٹھ قابو نہ آسن جٲے کرنہ لازمی آسن؟"
+      }
+    },
+    {
+      "id": 7,
+      "text": {
+        "en": "In the last month, how often have you been able to control irritations in your life?",
+        "ks": "پچھلے مہینے تُہند کتھ وارے اپنی زندگی ہِنٛز چڑچڑاہٹ پٲٹھ قابو آسن؟"
+      }
+    },
+    {
+      "id": 8,
+      "text": {
+        "en": "In the last month, how often have you felt that you were on top of things?",
+        "ks": "پچھلے مہینے تُہند کتھ وارے محسوس کرنہ کہ تُہند سب چیزہ پٲٹھ قابو چھُ؟"
+      }
+    },
+    {
+      "id": 9,
+      "text": {
+        "en": "In the last month, how often have you been angered because of things that were outside of your control?",
+        "ks": "پچھلے مہینے تُہند کتھ وارے غصہ آسن اُن چیزن پٲٹھ جٲے تُہند قابو سٕے باہر آسن؟"
+      }
+    },
+    {
+      "id": 10,
+      "text": {
+        "en": "In the last month, how often have you felt difficulties were piling up so high that you could not overcome them?",
+        "ks": "پچھلے مہینے تُہند کتھ وارے لگنہ کہ مشکلات ایتھ جمع گژھن کہ تُہند قابو نہ آسن؟"
+      }
+    }
+  ],
+  "scoring": {
+    "range": "0-40",
+    "reverseScoredQuestions": [4, 5, 7, 8],
+    "interpretation": [
+      { "min": 0, "max": 13, "severity": { "en": "Low stress", "ks": "کَم دباؤ" } },
+      { "min": 14, "max": 26, "severity": { "en": "Moderate stress", "ks": "درمیانہ دباؤ" } },
+      { "min": 27, "max": 40, "severity": { "en": "High perceived stress", "ks": "زیادہ محسوس دباؤ" } }
+    ]
+  }
+}

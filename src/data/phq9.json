@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Little interest or pleasure in doing things?",
+      "ks": "کمی دلچسپی یا خوشی چیزن کرنے منٛز؟"
+    },
+    "options": [
+      { "text": { "en": "Not at all", "ks": "بلکل نہ" }, "score": 0 },
+      { "text": { "en": "Several days", "ks": "کئی دن" }, "score": 1 },
+      { "text": { "en": "More than half the days", "ks": "آدھ دننِہ پٲٹھ سٕے زیادہ" }, "score": 2 },
+      { "text": { "en": "Nearly every day", "ks": "تقریباً ہر دن" }, "score": 3 }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Feeling down, depressed, or hopeless?",
+      "ks": "مایوس، افسردہ یا بے امید محسوس کرنہ؟"
+    },
+    "options": [
+      { "text": { "en": "Not at all", "ks": "بلکل نہ" }, "score": 0 },
+      { "text": { "en": "Several days", "ks": "کئی دن" }, "score": 1 },
+      { "text": { "en": "More than half the days", "ks": "آدھ دننِہ پٲٹھ سٕے زیادہ" }, "score": 2 },
+      { "text": { "en": "Nearly every day", "ks": "تقریباً ہر دن" }, "score": 3 }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Trouble falling or staying asleep, or sleeping too much?",
+      "ks": "نیند آسن یا برقرار رٔکھنہ منٛز مشکل، یا زیادہ سُوٚتھ؟"
+    },
+    "options": [
+      { "text": { "en": "Not at all", "ks": "بلکل نہ" }, "score": 0 },
+      { "text": { "en": "Several days", "ks": "کئی دن" }, "score": 1 },
+      { "text": { "en": "More than half the days", "ks": "آدھ دننِہ پٲٹھ سٕے زیادہ" }, "score": 2 },
+      { "text": { "en": "Nearly every day", "ks": "تقریباً ہر دن" }, "score": 3 }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Feeling tired or having little energy?",
+      "ks": "تھکاوٹ یا کمزور محسوس کرنہ؟"
+    },
+    "options": [
+      { "text": { "en": "Not at all", "ks": "بلکل نہ" }, "score": 0 },
+      { "text": { "en": "Several days", "ks": "کئی دن" }, "score": 1 },
+      { "text": { "en": "More than half the days", "ks": "آدھ دننِہ پٲٹھ سٕے زیادہ" }, "score": 2 },
+      { "text": { "en": "Nearly every day", "ks": "تقریباً ہر دن" }, "score": 3 }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Poor appetite or overeating?",
+      "ks": "کھانٛہ کھانْس منٛز کمی یا زیادہ کھانْہ؟"
+    },
+    "options": [
+      { "text": { "en": "Not at all", "ks": "بلکل نہ" }, "score": 0 },
+      { "text": { "en": "Several days", "ks": "کئی دن" }, "score": 1 },
+      { "text": { "en": "More than half the days", "ks": "آدھ دننِہ پٲٹھ سٕے زیادہ" }, "score": 2 },
+      { "text": { "en": "Nearly every day", "ks": "تقریباً ہر دن" }, "score": 3 }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down?",
+      "ks": "خود بابت بُرا محسوس کرنہ — یا لگنہ کہ تُہند ناکام چھُ یا تُہندے اپٲژ یا کنبہ ناامید کرنہ؟"
+    },
+    "options": [
+      { "text": { "en": "Not at all", "ks": "بلکل نہ" }, "score": 0 },
+      { "text": { "en": "Several days", "ks": "کئی دن" }, "score": 1 },
+      { "text": { "en": "More than half the days", "ks": "آدھ دننِہ پٲٹھ سٕے زیادہ" }, "score": 2 },
+      { "text": { "en": "Nearly every day", "ks": "تقریباً ہر دن" }, "score": 3 }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Trouble concentrating on things, such as reading the newspaper or watching television?",
+      "ks": "کسی چیز پٲٹھ توجہ دِنہ منٛز مشکل، مثلاً اخبار پڑھنہ یا ٹی وی چھانٛونہ؟"
+    },
+    "options": [
+      { "text": { "en": "Not at all", "ks": "بلکل نہ" }, "score": 0 },
+      { "text": { "en": "Several days", "ks": "کئی دن" }, "score": 1 },
+      { "text": { "en": "More than half the days", "ks": "آدھ دننِہ پٲٹھ سٕے زیادہ" }, "score": 2 },
+      { "text": { "en": "Nearly every day", "ks": "تقریباً ہر دن" }, "score": 3 }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual?",
+      "ks": "ایتھ آہستہ حرکت یا گال کرنہ کہ دوجے نظر آوے؟ یا برعکس — ایتھ بے چین یا تیز حرکت کہ عام وانٛچھ زیادہ گھومُ؟"
+    },
+    "options": [
+      { "text": { "en": "Not at all", "ks": "بلکل نہ" }, "score": 0 },
+      { "text": { "en": "Several days", "ks": "کئی دن" }, "score": 1 },
+      { "text": { "en": "More than half the days", "ks": "آدھ دننِہ پٲٹھ سٕے زیادہ" }, "score": 2 },
+      { "text": { "en": "Nearly every day", "ks": "تقریباً ہر دن" }, "score": 3 }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Thoughts that you would be better off dead, or of hurting yourself in some way?",
+      "ks": "ایمان کہ تُہند مرنہ بہتر چھُ یا اپنے آپس نقصان دِنہ کٲہس طریقہ؟"
+    },
+    "options": [
+      { "text": { "en": "Not at all", "ks": "بلکل نہ" }, "score": 0 },
+      { "text": { "en": "Several days", "ks": "کئی دن" }, "score": 1 },
+      { "text": { "en": "More than half the days", "ks": "آدھ دننِہ پٲٹھ سٕے زیادہ" }, "score": 2 },
+      { "text": { "en": "Nearly every day", "ks": "تقریباً ہر دن" }, "score": 3 }
+    ]
+  }
+]

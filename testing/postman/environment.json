@@ -1,0 +1,47 @@
+{
+  "id": "mental-health-api-env",
+  "name": "Mental Health API Environment",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000",
+      "enabled": true
+    },
+    {
+      "key": "api_base",
+      "value": "http://localhost:3000/api/v1",
+      "enabled": true
+    },
+    {
+      "key": "test_user_1",
+      "value": "2025092410abcdef123456",
+      "enabled": true
+    },
+    {
+      "key": "test_user_2",
+      "value": "2025092410fedcba654321",
+      "enabled": true
+    },
+    {
+      "key": "test_user_3",
+      "value": "2025092410123456abcdef",
+      "enabled": true
+    },
+    {
+      "key": "session_1",
+      "value": "session_test_001",
+      "enabled": true
+    },
+    {
+      "key": "session_2",
+      "value": "session_test_002",
+      "enabled": true
+    },
+    {
+      "key": "language",
+      "value": "en",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment"
+}

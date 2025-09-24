@@ -1,0 +1,101 @@
+{
+  "validUserIds": [
+    "2025092410abcdef123456",
+    "2025092410fedcba654321", 
+    "2025092410123456abcdef",
+    "2025092410654321fedcba",
+    "2025092410987654321abc",
+    "2025092410abcdef987654",
+    "2025092410111222333444",
+    "2025092410aaabbbcccddd",
+    "2025092410123abc456def",
+    "2025092410fedcba987654"
+  ],
+  "testRequests": {
+    "phq9": {
+      "answers": {"1": 2, "2": 1, "3": 3, "4": 2, "5": 1, "6": 2, "7": 3, "8": 1, "9": 2},
+      "questionCount": 9,
+      "description": "Depression screening - moderate severity"
+    },
+    "gad7": {
+      "answers": {"1": 3, "2": 2, "3": 3, "4": 1, "5": 2, "6": 3, "7": 2},
+      "questionCount": 7,
+      "description": "Anxiety screening - moderate severity"
+    },
+    "16per": {
+      "answers": {"1": 4, "2": 2, "3": 5, "4": 1, "5": 4, "6": 2, "7": 3, "8": 3},
+      "questionCount": 8,
+      "description": "MBTI personality test - INTJ type"
+    },
+    "who5": {
+      "answers": {"1": 3, "2": 2, "3": 4, "4": 3, "5": 2},
+      "questionCount": 5,
+      "description": "Well-being index - moderate level"
+    },
+    "brs": {
+      "answers": {"1": 4, "2": 2, "3": 4, "4": 3, "5": 4, "6": 2},
+      "questionCount": 6,
+      "description": "Brief Resilience Scale - high resilience"
+    },
+    "isi": {
+      "answers": {"1": 2, "2": 3, "3": 2, "4": 3, "5": 2, "6": 3, "7": 2},
+      "questionCount": 7,
+      "description": "Insomnia Severity Index - moderate insomnia"
+    },
+    "mbiss": {
+      "answers": {"1": 3, "2": 4, "3": 2, "4": 5, "5": 3, "6": 2, "7": 4},
+      "questionCount": 7,
+      "description": "Academic Burnout Scale - moderate burnout"
+    },
+    "ghq12": {
+      "answers": {"1": 2, "2": 1, "3": 3, "4": 2, "5": 1, "6": 2, "7": 3, "8": 1, "9": 2, "10": 3, "11": 2, "12": 1},
+      "questionCount": 12,
+      "description": "General Health Questionnaire - moderate distress"
+    },
+    "pss10": {
+      "answers": {"1": 2, "2": 3, "3": 2, "4": 4, "5": 1, "6": 3, "7": 2, "8": 4, "9": 3, "10": 2},
+      "questionCount": 10,
+      "description": "Perceived Stress Scale - moderate stress"
+    },
+    "k10": {
+      "answers": {"1": 2, "2": 1, "3": 3, "4": 2, "5": 1, "6": 2, "7": 3, "8": 1, "9": 2, "10": 3},
+      "questionCount": 10,
+      "description": "Kessler Psychological Distress - moderate distress"
+    },
+    "ucla": {
+      "answers": {"1": 2, "2": 3, "3": 1, "4": 4, "5": 2, "6": 3, "7": 1, "8": 4},
+      "questionCount": 8,
+      "description": "UCLA Loneliness Scale - moderate loneliness"
+    },
+    "audit": {
+      "answers": {"1": 1, "2": 2, "3": 1, "4": 0, "5": 2, "6": 1, "7": 0, "8": 1, "9": 2, "10": 0},
+      "questionCount": 10,
+      "description": "Alcohol Use Disorders Identification - low risk"
+    }
+  },
+  "sessionIds": [
+    "session_test_001",
+    "session_test_002", 
+    "session_test_003",
+    "session_batch_001",
+    "session_batch_002"
+  ],
+  "batchRequest": {
+    "tests": [
+      {
+        "testName": "phq9",
+        "answers": {"1": 2, "2": 1, "3": 3, "4": 2, "5": 1, "6": 2, "7": 3, "8": 1, "9": 2}
+      },
+      {
+        "testName": "gad7",
+        "answers": {"1": 3, "2": 2, "3": 3, "4": 1, "5": 2, "6": 3, "7": 2}
+      },
+      {
+        "testName": "who5",
+        "answers": {"1": 3, "2": 2, "3": 4, "4": 3, "5": 2}
+      }
+    ],
+    "language": "en",
+    "userId": "2025092410fedcba654321"
+  }
+}

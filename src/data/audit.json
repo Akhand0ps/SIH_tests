@@ -1,0 +1,39 @@
+{
+  "testType": "AUDIT",
+  "title": {
+    "en": "Alcohol Use Disorders Identification Test (AUDIT)",
+    "ks": "الکحل استعمال کی تشخیص ٹیسٹ (AUDIT)"
+  },
+  "instructions": {
+    "en": "Please answer the following questions about your alcohol consumption over the past year.",
+    "ks": "براہ کرم پچھلے سال منٛز اپنے شراب نوشی کے بارے منٛز درج ذیل سوالات کا جواب دیٚن۔"
+  },
+  "options": [
+    { "value": 0, "label": { "en": "Never", "ks": "کبھی نہ" } },
+    { "value": 1, "label": { "en": "Less than monthly", "ks": "ماہانہ سے کم" } },
+    { "value": 2, "label": { "en": "Monthly", "ks": "ماہانہ" } },
+    { "value": 3, "label": { "en": "Weekly", "ks": "ہفتہ وار" } },
+    { "value": 4, "label": { "en": "Daily or almost daily", "ks": "روزانہ یا تقریبا روزانہ" } }
+  ],
+  "questions": [
+    { "id": 1, "text": { "en": "How often do you have a drink containing alcohol?", "ks": "تُہند کتھ وارے الکحل والا مشروب پینٛہ آسن؟" } },
+    { "id": 2, "text": { "en": "How many drinks do you have on a typical day when drinking?", "ks": "تُہند عموماً کتنے مشروب پینٛہ آسن؟" } },
+    { "id": 3, "text": { "en": "How often do you have six or more drinks on one occasion?", "ks": "ایک موقع منٛز تُہند چھ یا زیادہ مشروب کتھ وارے پینٛہ آسن؟" } },
+    { "id": 4, "text": { "en": "How often during the last year have you found that you were not able to stop drinking once you had started?", "ks": "پچھلے سال منٛز کتھ وارے تُہند محسوس ہوٗن کہ شروع کرنٛ کے بعد روکنا مشکل ہوٗا؟" } },
+    { "id": 5, "text": { "en": "How often during the last year have you failed to do what was normally expected of you because of drinking?", "ks": "پچھلے سال منٛز کتھ وارے تُہند وہ کام نہ کر سکٗہ جو عام طور پر متوقع تھا شراب نوشی کی وجہ سے؟" } },
+    { "id": 6, "text": { "en": "How often during the last year have you needed a first drink in the morning to get yourself going after a heavy drinking session?", "ks": "پچھلے سال منٛز کتھ وارے تُہند صبح پہلے مشروب کی ضرورت محسوس ہوئی بھاری شراب نوشی کے بعد؟" } },
+    { "id": 7, "text": { "en": "How often during the last year have you had a feeling of guilt or remorse after drinking?", "ks": "پچھلے سال منٛز کتھ وارے شراب نوشی کے بعد گناہ یا پچھتاوے محسوس ہوٗا؟" } },
+    { "id": 8, "text": { "en": "How often during the last year have you been unable to remember what happened the night before because of drinking?", "ks": "پچھلے سال منٛز کتھ وارے شراب نوشی کی وجہ سے پچھلی رات کے واقعات یاد نہ رہ سکے؟" } },
+    { "id": 9, "text": { "en": "Have you or someone else been injured as a result of your drinking?", "ks": "کیا تُہند یا کسی اور کو شراب نوشی کی وجہ سے نقصان پہنچا؟" } },
+    { "id": 10, "text": { "en": "Has a relative, friend, doctor, or health worker been concerned about your drinking or suggested you cut down?", "ks": "کیا کوئی رشتہ دار، دوست، ڈاکٹر یا صحت کارکن تُہند شراب نوشی کے بارے میں فکر مند ہوا یا کم کرنے کا مشورہ دیا؟" } }
+  ],
+  "scoring": {
+    "range": "0-40",
+    "interpretation": [
+      { "min": 0, "max": 7, "severity": { "en": "Low risk", "ks": "کم خطرہ" } },
+      { "min": 8, "max": 15, "severity": { "en": "Moderate risk", "ks": "درمیانہ خطرہ" } },
+      { "min": 16, "max": 19, "severity": { "en": "High risk", "ks": "زیادہ خطرہ" } },
+      { "min": 20, "max": 40, "severity": { "en": "Possible dependence", "ks": "ممکنہ انحصار" } }
+    ]
+  }
+}

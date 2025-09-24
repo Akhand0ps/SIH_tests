@@ -1,0 +1,77 @@
+{
+  "testType": "GAD-7",
+  "title": {
+    "en": "Generalized Anxiety Disorder 7-item (GAD-7)",
+    "ks": "عمومی بے چینی رُوگ ۷ سوالی (GAD-7)"
+  },
+  "instructions": {
+    "en": "Over the last 2 weeks, how often have you been bothered by the following problems?",
+    "ks": "پتھ ۲ ہفتن منٛز تُہند اِن مشکلات ہِنٛذ کتھ وارے تنگ کرنہ آسن؟"
+  },
+  "options": [
+    { "value": 0, "label": { "en": "Not at all", "ks": "بلکل نہ" } },
+    { "value": 1, "label": { "en": "Several days", "ks": "کئی دن" } },
+    { "value": 2, "label": { "en": "More than half the days", "ks": "آدھ دننِہ پٲٹھ سٕے زیادہ" } },
+    { "value": 3, "label": { "en": "Nearly every day", "ks": "تقریباً ہر دن" } }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "text": {
+        "en": "Feeling nervous, anxious, or on edge",
+        "ks": "گھبراہٹ، بے چینی یا تناؤ محسوس کرنہ"
+      }
+    },
+    {
+      "id": 2,
+      "text": {
+        "en": "Not being able to stop or control worrying",
+        "ks": "فکر روکنہ یا قابو کرنہ نہ آسن"
+      }
+    },
+    {
+      "id": 3,
+      "text": {
+        "en": "Worrying too much about different things",
+        "ks": "وکھ وکھ چیزن بابت بہت زیادہ فکر کرنہ"
+      }
+    },
+    {
+      "id": 4,
+      "text": {
+        "en": "Trouble relaxing",
+        "ks": "آرام کرنہ منٛز مشکل"
+      }
+    },
+    {
+      "id": 5,
+      "text": {
+        "en": "Being so restless that it is hard to sit still",
+        "ks": "ایتھ بے چین آسن کہ بیٹھنہ مشکل بنانٛہ"
+      }
+    },
+    {
+      "id": 6,
+      "text": {
+        "en": "Becoming easily annoyed or irritable",
+        "ks": "جلدی ناراض یا چڑچڑا بننہ"
+      }
+    },
+    {
+      "id": 7,
+      "text": {
+        "en": "Feeling afraid as if something awful might happen",
+        "ks": "ڈَر محسوس کرنہ گویا کٲہ بُرا حادثہ ہونہ آسن"
+      }
+    }
+  ],
+  "scoring": {
+    "range": "0-21",
+    "interpretation": [
+      { "min": 0, "max": 4, "severity": { "en": "Minimal anxiety", "ks": "انتہائی کَم بے چینی" } },
+      { "min": 5, "max": 9, "severity": { "en": "Mild anxiety", "ks": "ہلکی بے چینی" } },
+      { "min": 10, "max": 14, "severity": { "en": "Moderate anxiety", "ks": "درمیانہ بے چینی" } },
+      { "min": 15, "max": 21, "severity": { "en": "Severe anxiety", "ks": "شدید بے چینی" } }
+    ]
+  }
+}

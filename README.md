@@ -1,6 +1,6 @@
 # Mental Health Tests API Server
 
-A comprehensive backend system for mental health assessments with multilingual support (English & Kashmiri), scoring algorithms, personalized recommendations, and cross-test insights.
+A comprehensive backend system for mental health assessments with multilingual support (English & Kashmiri), advanced scoring algorithms, and personalized recommendations.
 
 ## 🚀 Features
 
@@ -9,13 +9,13 @@ A comprehensive backend system for mental health assessments with multilingual s
 - **Multilingual Support**: English and Kashmiri languages
 - **Advanced Scoring**: Handles reverse scoring, MBTI trait calculation, percentile calculations
 - **Privacy-First**: Anonymous user IDs, no personally identifiable information stored
-- **Cross-Test Insights**: Analyzes patterns across multiple tests for deeper understanding
+- **Real-time Results**: Immediate scoring and interpretation
 
 ### Intelligent Recommendations
-- **Personalized Suggestions**: Based on test scores, personality type, and user history  
+- **Personalized Suggestions**: Based on test scores and personality type
 - **Category-Based**: Meditation, counseling, lifestyle, exercise, social, medical recommendations
 - **Priority-Based**: Urgent, high, medium, low priority recommendations
-- **Cross-Test Analysis**: Identifies co-occurring conditions and risk factors
+- **Evidence-Based**: Clinically validated recommendation strategies
 
 ### Privacy & Security
 - **Anonymous User Tracking**: Secure anonymous IDs for session management
@@ -129,8 +129,6 @@ POST /api/v1/answers/:testName/validate
 ### User Data (Anonymous)
 ```http
 GET /api/v1/answers/user/:userId
-GET /api/v1/answers/insights/:userId
-POST /api/v1/answers/insights/:userId/generate
 GET /api/v1/answers/recommendations/:userId
 PUT /api/v1/answers/recommendations/:recommendationId/read
 ```
@@ -184,7 +182,6 @@ Content-Type: application/json
       "recommendations": [...]
     },
     "recommendations": [...],
-    "insights": {...},
     "timestamp": "2024-09-23T10:30:00Z"
   }
 }
@@ -213,15 +210,6 @@ Content-Type: application/json
 
 ## 🧠 Advanced Features
 
-### Cross-Test Insights
-The system analyzes patterns across multiple tests to provide deeper insights:
-
-- **Co-occurring Conditions**: Depression + Anxiety patterns
-- **Sleep-Mood Connections**: Insomnia + Depression correlations  
-- **Personality-Mental Health**: MBTI + mental health combinations
-- **Risk Factor Analysis**: Academic burnout risk identification
-- **Protective Factors**: Resilience and well-being strengths
-
 ### Personality-Based Recommendations
 For MBTI personality types, the system provides:
 - Type-specific coping strategies
@@ -242,8 +230,7 @@ For MBTI personality types, the system provides:
 ### Collections
 - **user_results**: Test results with anonymous user IDs
 - **recommendations**: Personalized recommendations
-- **user_analytics**: Privacy-preserving usage statistics  
-- **cross_test_insights**: Multi-test pattern analysis
+- **user_analytics**: Privacy-preserving usage statistics
 - **system_analytics**: Aggregate system statistics (no personal data)
 
 ### Privacy Design
@@ -286,7 +273,7 @@ const anonymousId = generateAnonymousId();
 - Response options localized
 - Severity interpretations translated
 - Recommendations in user's language
-- Cross-test insights localized
+- Error messages localized
 
 ## 📈 System Monitoring
 

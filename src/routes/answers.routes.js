@@ -19,20 +19,21 @@ router.post("/:testName", async (req, res) => {
             });
         }
 
-        // Generate anonymous user ID if not provided
-        const anonymousId = userId || generateAnonymousId();
+        // Use provided userId or generate a simple fallback
+        const userIdentifier = userId || `user_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
 
         // Calculate scores using scoring service
         const results = scoringService.calculateScore(testName, answers, language);
 
         // Add user metadata
-        results.userId = anonymousId;
+        results.userId = userIdentifier;
         results.submittedAt = new Date().toISOString();
 
         // Save results to database
         try {
             const userResult = new UserResult({
-                anonymousUserId: anonymousId,
+                anonymousUserId: userIdentifier, // Keep this field name for compatibility
+                userId: userIdentifier,          // Also save in new field
                 testName: testName.toLowerCase(),
                 testType: results.testName,
                 answers: answers,
@@ -46,12 +47,12 @@ router.post("/:testName", async (req, res) => {
             const savedResult = await userResult.save();
 
             // Update user analytics
-            await updateUserAnalytics(anonymousId, testName.toLowerCase(), language);
+            await updateUserAnalytics(userIdentifier, testName.toLowerCase(), language);
 
             res.status(200).json({
                 success: true,
                 data: {
-                    userId: anonymousId,
+                    userId: userIdentifier,
                     testResults: results,
                     timestamp: new Date().toISOString(),
                     resultId: savedResult._id
@@ -64,7 +65,7 @@ router.post("/:testName", async (req, res) => {
             res.status(200).json({
                 success: true,
                 data: {
-                    userId: anonymousId,
+                    userId: userIdentifier,
                     testResults: results,
                     timestamp: new Date().toISOString(),
                     warning: "Results calculated but not saved to database"
@@ -229,24 +230,40 @@ router.post("/:testName/validate", (req, res) => {
     }
 });
 
-// GET /api/v1/answers/user/:userId - Get user's test history (anonymous)
+// GET /api/v1/answers/user/:userId - Get user's test history
 router.get("/user/:userId", async (req, res) => {
     try {
         const { userId } = req.params;
         const { language = 'en' } = req.query;
 
-        // Validate anonymous ID format
-        if (!validateAnonymousId(userId)) {
+        // Simple validation - just check if userId exists and is not empty
+        if (!userId || userId.trim() === '') {
             return res.status(400).json({
                 success: false,
-                error: "Invalid user ID format"
+                error: "User ID is required"
             });
         }
 
         // Get user's test history
-        const testHistory = await UserResult.find({ anonymousUserId: userId })
+        const rawTestHistory = await UserResult.find({ 
+            $or: [
+                { anonymousUserId: userId }, // For backward compatibility
+                { userId: userId }           // New field name
+            ]
+        })
             .sort({ completedAt: -1 })
             .select('-ipHash -deviceHash');
+
+        // Transform database results to match frontend TestResult interface
+        const testHistory = rawTestHistory.map(result => ({
+            testName: result.testType || result.testName,
+            rawScore: result.results.rawScore,
+            maxPossibleScore: result.results.maxPossibleScore,
+            percentile: result.results.percentile,
+            severity: result.results.severity,
+            recommendations: result.results.recommendations || [],
+            submittedAt: result.completedAt.toISOString()
+        }));
 
         // Get user analytics
         const analytics = await UserAnalytics.findOne({ anonymousUserId: userId });
@@ -258,7 +275,7 @@ router.get("/user/:userId", async (req, res) => {
                 language: language,
                 testHistory: testHistory,
                 totalTests: testHistory.length,
-                lastTestDate: testHistory.length > 0 ? testHistory[0].completedAt : null,
+                lastTestDate: testHistory.length > 0 ? testHistory[0].submittedAt : null,
                 analytics: analytics ? {
                     totalTestsTaken: analytics.totalTestsTaken,
                     preferredLanguage: analytics.preferredLanguage,

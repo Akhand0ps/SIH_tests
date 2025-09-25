@@ -415,12 +415,67 @@ class ScoringService {
             throw new Error(`Test ${testName} not found`);
         }
 
+        // Generate description based on test type
+        const descriptions = {
+            'GAD-7': {
+                en: 'A 7-item questionnaire to assess generalized anxiety disorder symptoms over the past 2 weeks.',
+                ks: 'عمومی بے چینی رُوگ کی علامات کا اندازہ لگانے کے لیے ۷ سوالی سوالنامہ۔'
+            },
+            'PHQ-9': {
+                en: 'A 9-item questionnaire to assess depression severity over the past 2 weeks.',
+                ks: 'ماضی کے ۲ ہفتوں میں ڈپریشن کی شدت کا اندازہ لگانے کے لیے ۹ سوالی سوالنامہ۔'
+            },
+            'MBTI': {
+                en: 'A personality assessment based on Carl Jung\'s theory of psychological types.',
+                ks: 'کارل جنگ کے نفسیاتی اقسام کے نظریے پر مبنی شخصیت کا جائزہ۔'
+            },
+            'AUDIT': {
+                en: 'A 10-item screening tool to identify hazardous and harmful alcohol consumption.',
+                ks: 'خطرناک اور نقصان دہ شراب نوشی کی شناخت کے لیے ۱۰ سوالی اسکریننگ ٹول۔'
+            },
+            'BRS': {
+                en: 'A 6-item scale to measure the ability to bounce back from stress.',
+                ks: 'تناؤ سے واپس آنے کی صلاحیت کی پیمائش کے لیے ۶ سوالی پیمانہ۔'
+            },
+            'GHQ-12': {
+                en: 'A 12-item questionnaire to assess general mental health and well-being.',
+                ks: 'عمومی ذہنی صحت اور بہبود کا اندازہ لگانے کے لیے ۱۲ سوالی سوالنامہ۔'
+            },
+            'ISI': {
+                en: 'A 7-item scale to assess insomnia severity and its impact on daily life.',
+                ks: 'بے خوابی کی شدت اور روزمرہ زندگی پر اس کے اثرات کا اندازہ لگانے کے لیے ۷ سوالی پیمانہ۔'
+            },
+            'K10': {
+                en: 'A 10-item scale to measure psychological distress and mental health.',
+                ks: 'نفسیاتی پریشانی اور ذہنی صحت کی پیمائش کے لیے ۱۰ سوالی پیمانہ۔'
+            },
+            'MBI-SS': {
+                en: 'A 7-item scale to assess student burnout and academic stress.',
+                ks: 'طالب علم کے جلاوے اور تعلیمی تناؤ کا اندازہ لگانے کے لیے ۷ سوالی پیمانہ۔'
+            },
+            'PSS-10': {
+                en: 'A 10-item scale to measure perceived stress levels in daily life.',
+                ks: 'روزمرہ زندگی میں محسوس شدہ تناؤ کی سطح کی پیمائش کے لیے ۱۰ سوالی پیمانہ۔'
+            },
+            'UCLA Loneliness Scale': {
+                en: 'An 8-item scale to measure subjective feelings of loneliness and social isolation.',
+                ks: 'تنہائی اور سماجی علیحدگی کے ذاتی احساسات کی پیمائش کے لیے ۸ سوالی پیمانہ۔'
+            },
+            'WHO-5': {
+                en: 'A 5-item questionnaire to assess overall well-being and quality of life.',
+                ks: 'مجموعی بہبود اور زندگی کے معیار کا اندازہ لگانے کے لیے ۵ سوالی سوالنامہ۔'
+            }
+        };
+
         return {
             testType: testData.testType,
             title: testData.title?.[language] || testData.testType,
+            description: descriptions[testData.testType]?.[language] || descriptions[testData.testType]?.en || '',
             totalQuestions: this.getTotalQuestions(testData),
             hasReversedItems: !!(testData.scoring?.reverseScoredQuestions?.length),
-            estimatedTimeMinutes: Math.ceil(this.getTotalQuestions(testData) * 0.5) // 30 seconds per question
+            estimatedTimeMinutes: Math.ceil(this.getTotalQuestions(testData) * 0.5), // 30 seconds per question
+            estimatedTime: `${Math.ceil(this.getTotalQuestions(testData) * 0.5)}-${Math.ceil(this.getTotalQuestions(testData) * 0.5) + 2} minutes`,
+            category: 'Mental Health'
         };
     }
 }

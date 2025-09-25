@@ -15,25 +15,19 @@ import ghqQuestions from "../data/ghq12.json" with {type:"json"}
 
 router.get("/phq9",(req,res)=>{
     res.status(200).json({
-        testType:"PHQ-9",
-        totalQuestions:phq9Questions.length,
-        questions:phq9Questions
+        data: phq9Questions
     });
 })
 
 router.get("/gad7",(req,res)=>{
     res.status(200).json({
-        testType:"GAD7",
-        totalQuestions:gad7Questions.length,
-        questions:gad7Questions
+        data: gad7Questions
     })
 })
 
 router.get("/ghq12",(req,res)=>{
      res.status(200).json({
-        testType:"General Health Questionnaire (GHQ-12)",
-        totalQuestions:ghqQuestions.length,
-        questions:ghqQuestions
+        data: ghqQuestions
     });
 })
 

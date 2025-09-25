@@ -14,12 +14,6 @@ const userResultSchema = new mongoose.Schema({
         }
     },
 
-    // Test session grouping - for tests taken together
-    testSessionId: {
-        type: String,
-        index: true
-    },
-
     testName: {
         type: String,
         required: true,
@@ -96,7 +90,6 @@ const userResultSchema = new mongoose.Schema({
 
 userResultSchema.index({ anonymousUserId: 1, completedAt: -1 });
 userResultSchema.index({ testName: 1, completedAt: -1 });
-userResultSchema.index({ testSessionId: 1, completedAt: -1 });
 
 // Recommendations Schema
 const recommendationSchema = new mongoose.Schema({

@@ -28,16 +28,17 @@ export function validateAnonymousId(id) {
         return false;
     }
 
+    // Check timestamp part (first 10 digits)
     const timestampPart = id.slice(0, 10);
-    const ten_check = !/^\d{10}$/;
-    if (ten_check.test(timestampPart)) {
+    const timestampRegex = /^\d{10}$/;
+    if (!timestampRegex.test(timestampPart)) {
         return false;
     }
 
-  
+    // Check hex part (last 12 characters)
     const hashPart = id.slice(10);
-    const lashhex = !/^[a-f0-9]{12}$/;
-    if (lashhex.test(hashPart)) {
+    const hexRegex = /^[a-f0-9]{12}$/;
+    if (!hexRegex.test(hashPart)) {
         return false;
     }
 
@@ -76,8 +77,3 @@ export function hashForPrivacy(data) {
 }
 
 
-export function generateTestSessionId() {
-    const timestamp = Date.now().toString(36);
-    const random = crypto.randomBytes(4).toString('hex');
-    return `sess_${timestamp}_${random}`;
-}

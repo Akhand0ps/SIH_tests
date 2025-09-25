@@ -9,7 +9,7 @@ const router = express.Router();
 router.post("/:testName", async (req, res) => {
     try {
         const { testName } = req.params;
-        const { answers, language = 'en', userId = null, sessionId = null } = req.body;
+        const { answers, language = 'en', userId = null } = req.body;
 
         // Validate request body
         if (!answers || typeof answers !== 'object') {
@@ -33,7 +33,6 @@ router.post("/:testName", async (req, res) => {
         try {
             const userResult = new UserResult({
                 anonymousUserId: anonymousId,
-                testSessionId: sessionId,
                 testName: testName.toLowerCase(),
                 testType: results.testName,
                 answers: answers,

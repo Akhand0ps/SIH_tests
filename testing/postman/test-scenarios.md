@@ -22,7 +22,7 @@
 
 5. **Submit Anxiety Test**
    - `POST /api/v1/answers/gad7`
-   - Same user ID, different session
+   - Same user ID
 
 6. **View Test History**
    - `GET /api/v1/answers/user/{userId}`
@@ -97,7 +97,7 @@
 
 2. **Verify Results**
    - Check all tests processed
-   - Verify same session ID assigned
+   - Verify consistent user data
 
 ### Expected Results:
 - All tests processed successfully

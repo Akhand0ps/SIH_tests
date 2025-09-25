@@ -73,13 +73,6 @@
       "description": "Alcohol Use Disorders Identification - low risk"
     }
   },
-  "sessionIds": [
-    "session_test_001",
-    "session_test_002", 
-    "session_test_003",
-    "session_batch_001",
-    "session_batch_002"
-  ],
   "batchRequest": {
     "tests": [
       {

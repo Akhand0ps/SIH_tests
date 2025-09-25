@@ -155,8 +155,7 @@ Content-Type: application/json
     // ... all 9 answers
   },
   "language": "en",
-  "userId": "2024092301a1b2c3d4e5f6",  // optional
-  "sessionId": "sess_abc123"           // optional
+  "userId": "2024092301a1b2c3d4e5f6"  // optional
 }
 ```
 

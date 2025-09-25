@@ -112,7 +112,7 @@
             "header": [{"key": "Content-Type", "value": "application/json"}],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"answers\": {\n    \"1\": 2, \"2\": 1, \"3\": 3, \"4\": 2, \"5\": 1,\n    \"6\": 2, \"7\": 3, \"8\": 1, \"9\": 2\n  },\n  \"language\": \"{{language}}\",\n  \"userId\": \"{{test_user_1}}\",\n  \"sessionId\": \"{{session_1}}\"\n}"
+              "raw": "{\n  \"answers\": {\n    \"1\": 2, \"2\": 1, \"3\": 3, \"4\": 2, \"5\": 1,\n    \"6\": 2, \"7\": 3, \"8\": 1, \"9\": 2\n  },\n  \"language\": \"{{language}}\",\n  \"userId\": \"{{test_user_1}}\"\n}"
             },
             "url": {
               "raw": "{{api_base}}/answers/phq9",
@@ -128,7 +128,7 @@
             "header": [{"key": "Content-Type", "value": "application/json"}],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"answers\": {\n    \"1\": 3, \"2\": 2, \"3\": 3, \"4\": 1,\n    \"5\": 2, \"6\": 3, \"7\": 2\n  },\n  \"language\": \"{{language}}\",\n  \"userId\": \"{{test_user_1}}\",\n  \"sessionId\": \"{{session_1}}\"\n}"
+              "raw": "{\n  \"answers\": {\n    \"1\": 3, \"2\": 2, \"3\": 3, \"4\": 1,\n    \"5\": 2, \"6\": 3, \"7\": 2\n  },\n  \"language\": \"{{language}}\",\n  \"userId\": \"{{test_user_1}}\"\n}"
             },
             "url": {
               "raw": "{{api_base}}/answers/gad7",
@@ -144,7 +144,7 @@
             "header": [{"key": "Content-Type", "value": "application/json"}],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"answers\": {\n    \"1\": 4, \"2\": 2, \"3\": 5, \"4\": 1,\n    \"5\": 4, \"6\": 2, \"7\": 3, \"8\": 3\n  },\n  \"language\": \"{{language}}\",\n  \"userId\": \"{{test_user_1}}\",\n  \"sessionId\": \"{{session_1}}\"\n}"
+              "raw": "{\n  \"answers\": {\n    \"1\": 4, \"2\": 2, \"3\": 5, \"4\": 1,\n    \"5\": 4, \"6\": 2, \"7\": 3, \"8\": 3\n  },\n  \"language\": \"{{language}}\",\n  \"userId\": \"{{test_user_1}}\"\n}"
             },
             "url": {
               "raw": "{{api_base}}/answers/16per",

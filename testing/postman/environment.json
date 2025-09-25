@@ -28,16 +28,6 @@
       "enabled": true
     },
     {
-      "key": "session_1",
-      "value": "session_test_001",
-      "enabled": true
-    },
-    {
-      "key": "session_2",
-      "value": "session_test_002",
-      "enabled": true
-    },
-    {
       "key": "language",
       "value": "en",
       "enabled": true
